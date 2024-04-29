@@ -6,3 +6,6 @@ Run the program using the following code:
 chainlit run SAMCares.py
 
 This assumes you have "chainlit" installed in your computer.
+
+# Necessary Libraries and Dependencies
+Use the "environment.yml" file to restore the exact libraries and used version to run the SAMCares file.
