@@ -22,7 +22,7 @@ def load_llm_light():
     from langchain.llms import CTransformers
     # Load the locally downloaded model here
     llm = CTransformers(
-                        model = "TheBloke/Llama-2-7B-Chat-GGUF",
+                        model = "TheBloke/Llama-2-70B-Chat-GGUF",
                         model_file = "llama-2-7b-chat.Q4_K_M.gguf",
                         model_type="llama",
                         max_new_tokens=1024,
@@ -33,9 +33,9 @@ def load_llm_light():
 def load_llm():
     print('Loading heavy version of LLaMa2!')
     # Load the Tokenizer for the main model
-    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf") 
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-70b-chat-hf") 
     # Load the Main model for Text Generation
-    model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", 
+    model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-70b-chat-hf", 
                                                 device_map='auto',
                                                 torch_dtype=torch.bfloat16,
                                                 use_auth_token=True,
