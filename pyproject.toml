@@ -1,0 +1,28 @@
+[project]
+name = "samcares"
+version = "2.0.0"
+description = "A Streamlit RAG study buddy for course documents."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "streamlit>=1.36",
+  "langchain>=0.3,<0.4",
+  "langchain-community>=0.3,<0.4",
+  "langchain-core>=0.3,<0.4",
+  "langchain-huggingface>=0.1,<0.2",
+  "langchain-text-splitters>=0.3,<0.4",
+  "transformers>=4.51,<5",
+  "torch",
+  "accelerate",
+  "faiss-cpu",
+  "sentence-transformers",
+  "huggingface-hub",
+  "pypdf",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+llama-cpp = ["llama-cpp-python"]
+
+[tool.uv]
+package = false

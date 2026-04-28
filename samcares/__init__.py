@@ -1,0 +1,2 @@
+"""SAMCares application package."""
+

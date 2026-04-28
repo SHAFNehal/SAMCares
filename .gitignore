@@ -1,2 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
 .venv/
-.gitignore
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime artifacts
+vector_data/
+*.faiss
+*.pkl
+*.gguf
+
+# Large local uploads and datasets
+data/*.pdf
+data/*.docx
+test_data/*.pdf
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
