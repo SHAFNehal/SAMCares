@@ -61,7 +61,7 @@ Older files were reorganized:
 From the project directory:
 
 ```bash
-cd /Users/shafnehal/Downloads/0_Friday_Tasks/SAMCares_Updated/SAMCares
+cd /Users/shafnehal/SAMCares
 uv sync
 uv run streamlit run app.py
 ```
